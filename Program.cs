@@ -1,4 +1,4 @@
-﻿string contacts = "Jonas Jonasson\nSven Svensson";
+string contacts = "Jonas Jonasson\nSven Svensson";
 string[] names = new string[0];
 
 while (true)
@@ -7,7 +7,8 @@ while (true)
     Console.WriteLine("ADRESSBOKEN");
     Console.WriteLine("1. Visa kontakter");
     Console.WriteLine("2. Lägg till kontakt");
-    Console.WriteLine("3. Avsluta");
+    Console.WriteLine("3.Läs ett skämt!");
+    Console.WriteLine("4. Avsluta");
 
     char choice = GetChar("Välj: ");
     if (choice == '1')
@@ -27,6 +28,11 @@ while (true)
         AddContact(name);
     }
     else if (choice == '3')
+    {
+        Console.WriteLine("Vad heter nattflyget till Moskva?  Sov-Jet!");
+        Console.ReadKey();
+    }
+    else if (choice == '4')
     {
         Console.WriteLine("AVSLUTAR...");
         Environment.Exit(0);
